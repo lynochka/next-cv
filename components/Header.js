@@ -5,9 +5,18 @@ export default function Header() {
   return (
     <>
       <div className="flex py-2">
-        <div className="grow"></div>
-        <div className="mr-2">Linkedin</div>
-        <div>Github</div>
+        <span className="grow"></span>
+
+        <a
+          href="https://www.linkedin.com/in/alina-astrakova/"
+          className="mr-9 text-gray-800"
+        >
+          <span className="mr-2">Linkedin</span>
+        </a>
+
+        <a href="https://github.com/lynochka" className="text-gray-800">
+          <span>Github</span>
+        </a>
       </div>
       <div class="flex justify-between items-center">
         <div>
@@ -16,7 +25,7 @@ export default function Header() {
             alt="One of Lina's two cats, Bruce"
             layout="fit"
             objectFit="cover"
-            className="rounded-full h-52 w-52"
+            className="rounded-full h-52 w-52 cat-cursor"
           />
         </div>
         <div class="grid justify-items-end">
