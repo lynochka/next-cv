@@ -8,9 +8,9 @@ function PostCard({ title, date, content }) {
 
         <time className="text-gray-400 text-sm">{date}</time>
       </div>
-      <p className="prose my-2 leading-tight p-2">
+      <div className="max-w-none prose prose-a:text-blue-600 my-2 leading-tight p-2">
         <MDXRemote {...content} />
-      </p>
+      </div>
     </div>
   );
 }
